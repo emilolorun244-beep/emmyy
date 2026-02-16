@@ -1,0 +1,107 @@
+/* Fonts */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+.navbar .container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.navbar .logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #d63384;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links li a:hover { color: #d63384; }
+.hamburger { display: none; cursor: pointer; font-size: 1.8rem; }
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1629905797770-f0ad9f2b4c57?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-content {
+  background: rgba(255,255,255,0.8);
+  padding: 2rem;
+  border-radius: 12px;
+}
+.hero h1 { font-family: 'Great Vibes', cursive; font-size: 3rem; color: #d63384; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+.btn { padding: 0.7rem 1.5rem; border-radius: 8px; color: #fff; text-decoration: none; margin: 0.3rem; display: inline-block; }
+.btn-pink { background: #d63384; }
+.btn-pink:hover { background: #a31b5d; }
+.btn-yellow { background: #f59f00; }
+.btn-yellow:hover { background: #d97706; }
+.btn-green { background: #22c55e; }
+.btn-green:hover { background: #16a34a; }
+
+/* Sections */
+section { padding: 6rem 1rem; }
+section h2 { font-family: 'Great Vibes', cursive; font-size: 2.5rem; margin-bottom: 2rem; color: #d63384; }
+.container { max-width: 1200px; margin: auto; }
+
+/* Products */
+.product-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.product-card { background: #fff; padding: 1rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.product-card:hover { transform: scale(1.05); }
+.product-card img { width: 100%; border-radius: 12px; height: 200px; object-fit: cover; }
+.product-card h3 { margin: 1rem 0; }
+
+/* Features */
+.features-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.feature-card { background: #fff; padding: 1.5rem; border-radius: 12px; font-weight: 500; color: #d63384; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.feature-card:hover { transform: scale(1.05); }
+
+/* Reviews */
+.reviews-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.review-card { background: #fff0f5; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+/* Contact */
+.contact iframe { margin-top: 2rem; border-radius: 12px; }
+
+/* Footer */
+.footer { background: #d63384; color: #fff; text-align: center; padding: 2rem 1rem; }
+.social-links { display: flex; justify-content: center; gap: 1rem; margin-top: 0.5rem; }
+.social-links a { color: #fff; text-decoration: none; }
+.social-links a:hover { color: #ffdd57; }
+
+/* Floating WhatsApp */
+.whatsapp-btn { position: fixed; bottom: 1.5rem; right: 1.5rem; background: #22c55e; padding: 0.8rem; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+.whatsapp-btn img { width: 40px; height: 40px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links { display: none; flex-direction: column; gap: 1rem; }
+  .hamburger { display: block; }
+}
